@@ -25,7 +25,7 @@
             </div>
             <div class="mb-3">
               <%= f.label :gender %> <br>
-              <%= f.select :gender, [['その他', 0], ['男性', 1], ['女性', 2]], { selected: 0 }, { id: "Gender", class: "user" } %>
+              <%= f.select :gender, User.genders.keys.to_a, { selected: 0 }, { id: "Gender", class: "user" } %>
             </div>
             <div class="mb-3">
               <%= f.label :password %>
