@@ -136,7 +136,7 @@ ActiveRecord::Schema.define(version: 2023_02_19_140745) do
     t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "gender"
+    t.integer "gender", default: 0
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
